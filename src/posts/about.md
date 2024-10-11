@@ -32,7 +32,9 @@ In 2024 I created <a href="https://kabooly.com" target="_blank" rel="noopener">K
 
 Contact me for a consulation meeting to discuss your requirements.
 
-[{{ settings.email }}](mailto:{{ settings.email }})
+Either at <a href="https://kabooly.com/contact/" target="_blank" rel="noopener">Kabooly.com</a>
+
+Or... [{{ settings.email }}](mailto:{{ settings.email }})
 
 [{{ settings.phoneNumber }}](tel:07877304672)
 
