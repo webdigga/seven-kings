@@ -6,7 +6,7 @@ description: Learn more about Seven Kings Web Design, a
   SEO, and performance.
 author: David White
 date: 2024-03-07T16:27:32.906Z
-type: article
+type: ContactPage
 tags:
   - article
 heroImage: /_includes/static/img/about-large.webp
@@ -21,7 +21,7 @@ I run a suite of performance tests to ensure that my high standards are being me
 
 ## Kabooly.com
 
-In 2024 I created <a href="https://kabooly.com" target="_blank" rel="noopener">Kabooly.com</a>. This was born out of my passion for providing businesses with seamless, fully managed website solutions. I created this platform to focus solely on building new, custom websites that help businesses establish a strong online presence without the headache of handling the technical aspects. At <a href="https://kabooly.com" target="_blank" rel="noopener">Kabooly.com</a>, my mission is to take care of everything for you, from the initial design to the final launch. Visit. To see how I can create the perfect website for your business, <a href="https://kabooly.com" target="_blank" rel="noopener">visit Kabooly.com</a>
+In 2024 I created <a href="https://kabooly.com" target="_blank" rel="noopener">Kabooly.com</a>. This was born out of my passion for providing businesses with seamless, fully managed website solutions. I created this platform to focus solely on building new, custom websites that help businesses establish a strong online presence without the headache of handling the technical aspects. At <a href="https://kabooly.com" target="_blank" rel="noopener">Kabooly.com</a>, my mission is to take care of everything for you, from the initial design to the final launch. To see how I can create the perfect website for your business, <a href="https://kabooly.com" target="_blank" rel="noopener">visit Kabooly.com</a>
 
 ## Why choose Kabooly.com?
 

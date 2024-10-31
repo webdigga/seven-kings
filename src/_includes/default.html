@@ -68,34 +68,77 @@
       <script type="application/ld+json">
         {
           "@context": "https://schema.org",
-          "@type": "WebSite",
-          "name": "{{ settings.title }}",
+          "@type": "LocalBusiness",
+          "image": "{{ env.site }}/android-chrome-512x512.png",
+          "url": "{{ env.site }}",
+          "logo": "{{ env.site }}/android-chrome-512x512.png",
+          "name": "{{ settings.seoName }}",
           "description": "{{ settings.description }}",
-          "image": "android-chrome-512x512.png",
-          "url": "{{ env.site }}"
+          "email": "{{ settings.email }}",
+          "telephone": "{{ settings.phoneNumber }}",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "{{ settings.streetAddress | safe }}",
+            "addressLocality": "{{ settings.townCity | safe }}",
+            "addressCountry": "{{ settings.country | safe }}",
+            "addressRegion": "{{ settings.region | safe }}",
+            "postalCode": "{{ settings.postCode | safe }}"
+          },
+          "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "{{ settings.weekDayOpening | safe }}",
+            "closes": "{{ settings.weekDayClosing | safe }}"
+          }]
         }
       </script>
     {% endif %}
 
-    {% if type === 'article' %}
+    {% if type === 'ContactPage' %}
       <script type="application/ld+json">
         {
-          "@context": "http://schema.org",
-          "@type": "Article",
-          "headline": "{{ title }}",
-          "datePublished": "{{ date }}",
-          "url": "{{ env.site }}/{{ title | slugify }}/",
-          "description": "{{ description }}",
-          "image": "{{ heroImage }}",
-          "isPartOf": {
-            "@type": "WebSite",
-            "name": "{{ settings.title }}",
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ env.site }}/about/"
+          },
+          "publisher": {
+            "@type": "MedicalBusiness",
+            "@id": "{{ env.site }}",
+            "name": "{{ settings.seoName }}",
+            "logo": "{{ env.site }}/android-chrome-512x512.png",
+            "telephone": "{{ settings.phoneNumber }}",
+            "email": "{{ settings.email }}",
             "url": "{{ env.site }}",
-            "publisher": {
-              "@type": "Organization",
-              "name": "{{ settings.title }}",
-              "url": "{{ env.site }}"
-            }
+            "image": "{{ env.site }}/android-chrome-512x512.png",
+            "description": "{{ description }}",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "{{ settings.streetAddress | safe }}",
+              "addressLocality": "{{ settings.townCity | safe }}",
+              "addressCountry": "{{ settings.country | safe }}",
+              "addressRegion": "{{ settings.region | safe }}",
+              "postalCode": "{{ settings.postCode | safe }}"
+            },
+            "openingHoursSpecification": [{
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "{{ settings.weekDayOpening | safe }}",
+              "closes": "{{ settings.weekDayClosing | safe }}"
+            }]
           }
         }
       </script>
